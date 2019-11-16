@@ -1,0 +1,46 @@
+spring:  
+  application:
+    name: javademo
+  profiles:
+    active: ${PROFILE}
+  sleuth:
+    sampler:
+      percentage: 1.0
+  cloud:      
+      config: 
+        uri: ${CONFIG_SERVER_URI}
+        failFast: true
+        retry:
+          maxAttempts: 20
+  messaging: 
+    delay: 360000
+    provider: ACTIVEMQ
+
+  activemq:
+    broker-url: tcp://localhost:61616
+    password: admin
+    user: admin
+    topic: err-msg-topic
+  jms:
+    pub-sub-domain: true
+  kafka:
+    consumer:
+      group-id: message-group
+    template:
+      default-topic: err-msg-topic
+    bootstrap-servers: localhost:9092
+     
+toggle: 
+   feature: 
+    isCamel: false
+    isMysql: false
+  
+endpoints:
+  health:
+    enabled: false
+  metrics:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
