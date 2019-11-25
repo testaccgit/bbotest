@@ -5,7 +5,7 @@ git checkout
 git checkout -b <branch-name>
 # Git list all branches:
 git branche -av
-# Git process cor push new file:
+# Git process to push new file:
 	- ADD
 	git add .   (all)
 	git add <file name>
