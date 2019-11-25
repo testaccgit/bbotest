@@ -3,3 +3,15 @@
 git checkout
 # Create new Git branche:
 git checkout -b <branch-name>
+# Git list all branches:
+git branche -av
+# Git process cor push new file:
+	- ADD
+	git add .   (all)
+	git add <file name>
+
+	- COMMIT
+	git commit -m "<some comment>"
+
+	- PUSH
+	git push origin <branche name>
