@@ -1,0 +1,5 @@
+###
+# Git check curent branch / switch to the branch:
+git checkout
+# Create new Git branche:
+git checkout -b <branch-name>
