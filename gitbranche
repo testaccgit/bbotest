@@ -4,7 +4,7 @@ git checkout
 # Create new Git branche:
 git checkout -b <branch-name>
 # Git list all branches:
-git branche -av
+git branch -av
 # Git process to push new file:
 	- ADD
 	git add .   (all)
